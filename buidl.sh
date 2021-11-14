@@ -40,10 +40,10 @@ ln -s /usr/local/ssl/lib/libcrypto.so /usr/lib64/libcrypto.so
 ln -s /usr/local/ssl/lib/libssl.so /usr/lib64/libssl.so.10 
 ln -s /usr/local/ssl/lib/libcrypto.so /usr/lib64/libcrypto.so.10
 echo "/usr/local/ssl/lib">>/etc/ld.so.conf 
-echo "export OPENSSL_ROOT_DIR=/usr/local/ssl" >> /root/.bashrc
+echo "export OPENSSL_ROOT_DIR=/usr/local/ssl" >> ~/.bashrc
 ldconfig 
-echo "export PATH=$PATH:/apps/sylar/bin" >> /root/.bashrc
-source /root/.bashrc
+echo "export PATH=$PATH:/apps/sylar/bin" >> ~/.bashrc
+source ~/.bashrc
 
 #build
 cd  ~/lab
